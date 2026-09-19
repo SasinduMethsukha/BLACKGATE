@@ -1,0 +1,10 @@
+NIGHTFALL FREIGHT CO. — OLD EMPLOYEE DIRECTORY
+
+Name                 Department             Handle
+Amara Perera         Operations             amara.ops
+Jon Bell             Finance                jbell
+Maya Fernando        Communications         maya.comms
+Miles Warden         Infrastructure         miles.warden
+
+Archive note:
+Infrastructure references for the old archive use the employee handle rather than the full name.

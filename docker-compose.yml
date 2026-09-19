@@ -1,0 +1,22 @@
+services:
+  portal:
+    build: ./portal
+    container_name: blackgate-portal
+    ports: ["8080:8080"]
+    volumes:
+      - "./portal:/app"
+      - "./stages:/stages:ro"
+    environment: ["SECRET_KEY=change-this-for-a-shared-demo"]
+    networks: [blackgate]
+    restart: unless-stopped
+  stage6:
+    build: ./stages/stage06-web
+    container_name: blackgate-stage6
+    expose: ["5000"]
+    environment: ["FLAG=CTF{blackgate_final_gate}"]
+    networks: [blackgate]
+    restart: unless-stopped
+networks:
+  blackgate:
+    name: blackgate_blackgate
+    driver: bridge
